@@ -11,9 +11,11 @@ pool:
 
 steps:
 - task: Npm@1
+  displayName: NPM Install
   inputs:
     command: 'install'
 - task: Npm@1
+  displayName: Run E2E Tests
   inputs:
     command: 'custom'
-    customCommand: 'cy:run'
+    customCommand: 'run cy:run'
