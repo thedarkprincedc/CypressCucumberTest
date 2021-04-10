@@ -11,9 +11,8 @@ pool:
 
 steps:
 - task: Npm@1
-  displayName: NPM Install
   inputs:
-    command: 'install'
+    command: 'ci'
 - task: Npm@1
   displayName: Run E2E Tests
   inputs:
