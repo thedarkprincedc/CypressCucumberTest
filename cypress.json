@@ -1,0 +1,10 @@
+{
+    "testFiles": "**/*.feature",
+    "chromeWebSecurity": false,
+    "reporter": "junit",
+    "reporterOptions": {
+        "mochaFile": "results/my-test-output.xml",
+        "toConsole": true
+    },
+    "experimentalStudio": true
+}
