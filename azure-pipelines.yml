@@ -18,3 +18,7 @@ steps:
   inputs:
     command: 'custom'
     customCommand: 'run cy:run'
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: '**/TEST-*.xml'
