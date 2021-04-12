@@ -24,8 +24,8 @@ steps:
     testResultsFiles: 'results/my-test-*.xml'
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '$(Build.SourcesDirectory)'
-    Contents: '**'
+    SourceFolder: '$(Build.SourcesDirectory)/cypress'
+    Contents: './snapshots/**, ./videos/**, ./results/**'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 - task: PublishBuildArtifacts@1
   inputs:
